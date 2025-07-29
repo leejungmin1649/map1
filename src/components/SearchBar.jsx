@@ -6,8 +6,8 @@ export default function SearchBar({ onSearchResult }) {
 
   const handleSearch = async () => {
     try {
-      const API_KEY = "YOUR_VWORLD_KEY";
-      const url = `https://api.vworld.kr/req/search?key=${API_KEY}&request=search&query=${keyword}&type=place&format=json`;
+      const API_KEY = "A08018CE-2661-3CBF-95D0-0D9615ACFEE6";
+      const url = `https://api.vworld.kr/req/search?key=${A08018CE-2661-3CBF-95D0-0D9615ACFEE6}&request=search&query=${A08018CE-2661-3CBF-95D0-0D9615ACFEE6}&type=place&format=json`;
       const res = await axios.get(url);
       if (res.data.response.result.items.length > 0) {
         const { point } = res.data.response.result.items[0];
